@@ -1,8 +1,8 @@
-import config, telebot
+import telebot
 from telebot import types
-from telegram.ext import Updater, CommandHandler
 
-bot = telebot.TeleBot(config.token)
+token = '389449348:AAGt1xgwvGsnijAQU3VuhqATTO7drZLHjt8'
+bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def start(m):
